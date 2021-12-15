@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width ,initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>OOPS</title>
     <link rel="icon" href="Images/Python-logo.png">
     <style>
@@ -30,9 +32,9 @@
             float: left;
             color: #f2f2f2;
             text-align: center;
-            padding: 28px 65px;
+            padding: 25px 53px;
             text-decoration: none;
-            font-size: 20px;
+            font-size: 15px;
         }
 
         .topnav a:hover {
@@ -78,7 +80,7 @@
         <br> <br>
         Major OOP (object-oriented programming) concepts in Python include Class, Object, Method, Inheritance, Polymorphism, Data Abstraction, and Encapsulation.
     </ul></article>
-<img height="350" width="650px" src="Images/Object&Class.png" alt="IMG" align="right" ></div>
+<img height="350" width="650px" src="{{url_for('static', filename='/images/Object&Class.png')}}" alt="IMG" align="right" ></div>
 <ul><h3 style="color: orangered"> Class, Object and Methods?</h3></ul>
     <article><ul>
         <h4 style="color: coral">Class :</h4>
@@ -96,7 +98,7 @@
 
 <article>
     <ul>
-        <img height="350" width="550" src="Images/Inheritance.jpg" alt="IMG" align="left" ></div>
+        <img height="350" width="550" src="{{url_for('static', filename='/images/Inheritance.jpg')}}" alt="IMG" align="left" ></div>
         <ul><h3 style="color: orangered"> What is Inheritance?</h3></ul>
     </ul>
     Ever heard of this dialogue from relatives “you look exactly like your father/mother” the reason behind this is called ‘inheritance’. From the Programming aspect, It generally means “inheriting or transfer of characteristics from parent to child class without any modification”. The new class is called the derived/child class and the one from which it is derived is called a parent/base class.
@@ -114,10 +116,10 @@
     <br>       <br>
     <p style="font-family: American Typewriter;text-align: center"> Adding screenshot for reference</p>
 
-    <div style="text-align: center;"><img height="400" width="1000px" src="Images/InheritanceEx.png "></div>
+    <div style="text-align: center;"><img height="400" width="1000px" src="{{url_for('static', filename='/images/InheritanceEx.png')}} "></div>
         <br> <br>
         <br><br>
-        <img height="250" width="550" src="Images/poly.png" alt="IMG" align="right" ></ul>
+        <img height="250" width="550" src="{{url_for('static', filename='/images/poly.PNG')}}" alt="IMG" align="right" ></ul>
         <ul><h3 style="color: orangered"> What is Polymorphism?</h3>
      The word Poly means MANY. morphism mean many forms. In programming, polymorphism means the same function name (but different signatures) being used for different types.
             <br> <br>
@@ -126,8 +128,8 @@
 <br>       <br>
     <p style="font-family: American Typewriter;text-align: center"> Adding screenshot for reference</p>
 <article><ul>
-    <div style="text-align: center;"><img height="400" width="1000px" src="Images/Poly1.png "></div>    <br>           <br> <br>
-    <img height="220" width="550" src="Images/Abstraction.png" alt="IMG" align="left" ></ul>
+    <div style="text-align: center;"><img height="400" width="1000px" src="{{url_for('static', filename='/images/Poly1.png')}} "></div>    <br>           <br> <br>
+    <img height="220" width="550" src="{{url_for('static', filename='/images/Abstraction.png')}}" alt="IMG" align="left" ></ul>
     <h3 style="color: orangered"> What is Data Abstraction?</h3>
     Data abstraction is a principle of data modeling theory that emphasizes the clear separation between the external interface of objects and internal data handling and manipulation. In many programming languages, interfaces (or abstract classes) provide abstraction, and their concrete implementations form the implementation.
      <br>           <br>
@@ -138,7 +140,7 @@
 <article> <ul>
     <br>
 
- <img height="220" width="550" src="Images/Encpsulation.png" alt="IMG" align="right" >
+ <img height="220" width="550" src="{{url_for('static', filename='/images/Encpsulation.png')}}" alt="IMG" align="right" >
     <h3 style="color: orangered"> What is Encapsulation?</h3>
   Encapsulation is the packing of data and functions that work on that data within a single object. By doing so, you can hide the internal state of the object from the outside. This is known as information hiding.
 <br> 
@@ -151,7 +153,7 @@
 
         <br><p style="font-family: American Typewriter;text-align: center"> Adding screenshot for reference</p>
                                                                                          
-        <div style="text-align: center;"><img height="400" width="1000px" src="Images/Poly1.png "></div>
+        <div style="text-align: center;"><img height="400" width="1000px" src="{{url_for('static', filename='/images/Poly1.png')}} "></div>
 
 </ul>
     </article>

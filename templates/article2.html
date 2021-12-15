@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width ,initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>AAA Testing</title>
     <link rel="icon" href="Images/Python-logo.png">
     <style>
@@ -30,9 +32,9 @@
             float: left;
             color: #f2f2f2;
             text-align: center;
-            padding: 28px 65px;
+            padding: 25px 53px;
             text-decoration: none;
-            font-size: 20px;
+            font-size: 15px;
         }
 
         .topnav a:hover {
@@ -69,7 +71,7 @@
             <li class="nav-item">
             </li>
             <div class="topnav">
-                <a href="home.html">Home</a>
+                <a href="/">Home</a>
                 <a href="/art_1">Pylint</a>
                 <a class="active" href="/art_2">AAA Testing</a>
                 <a href="/art_3">Object Oriented Programming</a>
@@ -85,7 +87,7 @@
 <article>
 <ul>
     Software Testing is a method to check whether the actual software product matches expected requirements and to ensure that software product is Defect free. It involves execution of software/system components using manual or automated tools to evaluate one or more properties of interest. The purpose of software testing is to identify errors, gaps or missing requirements in contrast to actual requirements.
-</ul></article>  <div style="text-align: center;"><img height="578" width="1000px" src="Images/Testing.png" alt="IMG"></div>
+</ul></article>  <div style="text-align: center;"><img height="578" width="1000px" src="{{url_for('static', filename='/images/Testing.png')}}" alt="IMG"></div>
 
 <h3 style = "text-align: center; color: orangered" >why is it important?</h3>
 
@@ -112,14 +114,14 @@
 <br>
 <p style="font-family: American Typewriter;text-align: center"> Adding screenshot for reference</p>
 
-<div style="text-align: center;"><img height="144" width="1000px" src="Images/Arrange.png"></div>
+<div style="text-align: center;"><img src="{{url_for('static', filename='/images/Arrange.png')}}"></div>
 
 <b><h5 style="font-family: 'Apple Braille'"> 2. Act : </h5></b>
 <article>Act on the target behavior. Act steps should cover the main thing to be tested. This could be calling a function or method, calling a REST API, or interacting with a web page. Keep actions focused on the target behavior.</article>
 <br>
 <p style="font-family: American Typewriter;text-align: center"> Adding screenshot for reference</p>
 
-<div style="text-align: center;"><img height="86" width="1000px" src="Images/Act.png"></div>
+<div style="text-align: center;"><img height="86" width="1000px" src="{{url_for('static', filename='/images/Act.png')}}"></div>
 
 
 <b></b><h5 style="font-family: 'Apple Braille'"> 3. Assert : </h5></b>
@@ -127,7 +129,7 @@
 <br>
 <p style="font-family: American Typewriter;text-align: center"> Adding screenshot for reference</p>
 
-<div style="text-align: center;"><img height="86" width="1000px" src="Images/Assert.png"></div>
+<div style="text-align: center;"><img height="86" width="1000px" src="{{url_for('static', filename='/images/Assert.png')}}"></div>
 </ul>
 
 <h3 style = "text-align: center; color: orangered" >How to use external data for testing?</h3>

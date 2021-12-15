@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width ,initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Pylint</title>
     <link rel="icon" href="Images/Python-logo.png">
     <style>
@@ -30,9 +32,9 @@
             float: left;
             color: #f2f2f2;
             text-align: center;
-            padding: 28px 65px;
+            padding: 25px 53px;
             text-decoration: none;
-            font-size: 20px;
+            font-size: 15px;
         }
 
         .topnav a:hover {
@@ -48,7 +50,7 @@
 
 
 </head>
-<div style="text-align: center;">
+<body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -58,7 +60,7 @@
             <li class="nav-item">
             </li>
             <div class="topnav">
-                <a href="home.html">Home</a>
+                <a href="/">Home</a>
                 <a class="active" href="/art_1">Pylint</a>
                 <a href="/art_2">AAA Testing</a>
                 <a href="/art_3">Object Oriented Programming</a>
@@ -80,13 +82,13 @@
 
 <p> Adding screenshot for reference</p>
 
-    <div style="text-align: center;"><img height="350px" width="1000px" src="Images/pylint1.png"></div>
+    <div style="text-align: center;"><img height="350px" width="1000px" src="{{url_for('static', filename='/images/pylint1.png')}}"></div>
     <br> once installation has been done, it will show as pylint installed successfully.</div> <br>
 </div>
 
 <h5>Step 2 : checking code using pylint</h5> <br>
 <p>By using the command pylint class name or project name we can check the code accuracy. Below command explains the accuracy of my code</p>
-<div style="text-align: center;"><img height="350px" width="1000px" src="Images/pylint2.png"></div><br>   <br>
+<div style="text-align: center;"><img height="350px" width="1000px" src="{{url_for('static', filename='/images/pylint2.png')}}"></div><br>   <br>
 <u><h3 style="color: darkblue ">Glossary of OOP terms</h3></u>
 <br><h4 style="color: royalblue; font-family: 'Apple Braille'">Factory :</h4>
 <article>Factory method is a creational design pattern which solves the problem of creating product objects without specifying their concrete classes</article>
@@ -158,7 +160,7 @@ They manage complexity, mitigate code bloat, and improve productivity.</article>
     <a href="https://github.com/kn329/Project1/tree/master">GIT HUB</a>
     <p> &copy;2021 Kartheek Nadella</p>
 </div>
-
+</body>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
