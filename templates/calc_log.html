@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Calculater</title>
+    <style>
+        .center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+.black_color{
+    color: #000000;
+    font-size: 25px;
+}
+.left{
+    padding-left: 30px;
+}
+.result{
+    color: blue;
+}
+.padding-left-right{
+    padding-left: 30px;
+    padding-right: 30px
+}
+        </style>
+  </head>
+  <body 
+>
+<div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none" style="
+          color: #000000;
+          font-size: 50px;
+          font-style: oblique;">
+        Calculater
+      </a>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="/" class="nav-link px-2 link-secondary" style="color:#000000">Home</a></li>
+      </ul>
+
+    </header>
+  </div>
+    <div class="padding-left-right" >
+        <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                
+                <th scope="col">Value 1</th>
+                <th scope="col">Value 2</th>
+                <th scope="col">Operation</th>
+                <th scope="col">Result</th>
+              </tr>
+            </thead>
+            <tbody>
+                {% for row in table%}
+              <tr>
+                {% for col in row%}
+                <td>{{ col}}</td>
+                {%endfor%}
+              </tr>
+              {%endfor%}
+              
+            </tbody>
+          </table>
+        </div>
+        <div style="float: right;
+        padding-right: 20px;">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    {% if pagination.prev_page%}
+                  <li class="page-item"><a class="page-link" href="/table/logs?page={{pagination.prev_page}}">Previous</a></li>
+                  {%else%}
+                  <li class="page-item disabled" ><a class="page-link" href="#" >Previous</a></li>
+                  {%endif%}
+                  {%for page in pagination.pages%}
+                  <li class="page-item"><a class="page-link" href="/table/logs?page={{page}}">{{page}}</a></li>
+                  {%endfor%}
+                  {% if pagination.next_page%}
+                  <li class="page-item"><a class="page-link" href="/table/logs?page={{pagination.next_page}}">Next</a></li>
+                  {%else%}
+                  <li class="page-item disabled" ><a class="page-link" href="#">Next</a></li>
+                  {%endif%}
+                </ul>
+              </nav>
+        </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

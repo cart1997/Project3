@@ -1,0 +1,13 @@
+Value_1,Value_2,Operation,Result
+1,2,Addition,3.0
+1,2,Addition,3.0
+1,23,Subraction,-22.0
+1,5,Addition,6.0
+67,45,Divide,1.488888888888889
+67,0,Divide,ZeroDivisionError
+67,0,Divide,ZeroDivisionError
+5,6,Addition,11
+5,5,Addition,10
+5,5,Addition,10
+1,2,Addition,3
+1,2,Multiply,2
